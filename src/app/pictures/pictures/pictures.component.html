@@ -1,0 +1,10 @@
+
+<div class="pictures">
+  <div class="pictures__images-container">
+    <div class="pictures__image" *ngFor="let pic of pictures" (click)="picturesModal.open(pic.id)">
+      <img [src]="pic.cropped_picture">
+    </div>
+  </div>
+</div>
+
+<pva-pictures-modal #picturesModal></pva-pictures-modal>

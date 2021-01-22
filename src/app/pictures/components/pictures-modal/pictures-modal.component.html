@@ -1,0 +1,8 @@
+<div class="pictures-modal" [hidden]="!isOpen">
+  <div class="pictures-modal__dialog">
+    <button class="pictures-modal__close-btn" (click)="close()">
+      <i class="fas fa-times"></i>
+    </button>
+    <img *ngIf="picture && !isLoading" class="pictures-modal__image" [src]="picture.full_picture" [alt]="picture.author">
+  </div>
+</div>
